@@ -5,8 +5,8 @@ nav{
     align-items: center;
     padding: 10px 20px;    
     background: rgb(172,134,64);
-    background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);;
-    ;
+    background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
+    
 
 }
 .nav-links{
