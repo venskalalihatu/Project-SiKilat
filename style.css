@@ -1,0 +1,16 @@
+/* styling bagian navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;    
+}
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li{
+    display: inline;
+    margin-right: 20px;
+}
