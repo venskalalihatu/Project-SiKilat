@@ -54,11 +54,19 @@ a:hover{
     padding: 5px 5px 5px 20px;
     background-color: beige;
 }
+
 .form-tracking{
+    text-align: center;
+}
+.form-tracking input{
+    border: 1px  ;
+    border-radius: 42px;
+    width: 1200px;
+    height:40px
 
 }
 .button-track{
-    
+    text-align: center;
 }
 
 /* Body Service */
@@ -96,3 +104,19 @@ a:hover{
     }
 
 /* Footer */
+
+
+/* Logistics */
+.logistics ul{
+    column-count: 2;
+    list-style-type: none;
+
+  }
+.logistics li{
+    padding: 50px;
+}
+
+.logistics img{
+    width: 60px;
+    height:50px;
+}
