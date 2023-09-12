@@ -71,21 +71,63 @@ a:hover{
 
 /* Body Service */
 .Flex-Services{
-    display: flex;
-    flex-wrap: wrap;
     background-color: DodgerBlue;
 }
 
-.Flex-Services > div{
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.items > div{    
     background-color: #f1f1f1;
-    width: 100px;
+    width: 200px;
     margin: 10px;
-    text-align: center;
-    line-height: 75px;
     font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     }
 .Flex-Services > h2{
-    margin-bottom: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#item1,#item2{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.foto{
+    background-color:greenyellow;
+    border-radius: 10px;
+}
+.text-items{
+    background-color: goldenrod;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.judul-items, .text-body-items{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.judul-items{
+    background-color: blueviolet;
+}
+.text-body-items{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    font-size: medium;
 }
 
 /* Body AboutUs */
