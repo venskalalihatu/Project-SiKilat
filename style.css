@@ -42,12 +42,33 @@ a:hover{
     background-color: antiquewhite;
     font-family: poppins;    
 }
-.banner{    
-    background-color: aquamarine;
+.banner {    
+
+    position: relative;
     border-radius: 15px;
+    width: 100%;
+    max-height:900px;
+    position:relative;
+    
+}
+.banner img{    
+
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    max-height:900px;
+    position:relative;
 }
 .banner-teks{
     padding: 5px 5px 5px 20px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    
 }
 
 .tracking{
@@ -66,8 +87,18 @@ a:hover{
 
 }
 .button-track{
+    background: rgb(172,134,64);
+    background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
+    border-radius: 8px;
+    font-family: poppins;
+    border: none;
+    color: black;
+    padding: 16px;
     text-align: center;
-}
+    font-size: 12px;
+    margin-top: 32px;
+  }
+ 
 
 /* Body Service */
 .Flex-Services{
