@@ -66,9 +66,9 @@ a:hover{
 .banner-teks{
     padding: 5px 5px 5px 20px;
     position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 10%;
+
     color: blue;
     font-weight: bolder;
     font-size: 30px;
