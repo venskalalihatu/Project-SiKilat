@@ -7,13 +7,16 @@ nav{
     background: rgb(172,134,64);
     background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
     font-size:x-large;
+    min-width: 350px;
 
 }
 .nav-links{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
+ 
 .nav-links li{
     display: inline;
     margin-right: 20px;
@@ -31,35 +34,42 @@ a:hover{
 }
 
 .heading img{
-    width: 120px;
-    height:70px;
+    width: 210px;
+    height:121px;
 }
 
 *{
     font-family: poppins;
+    padding: 0;
+    margin: 0;
 }
 
 /* body Home */
+body{
+    min-width: 350px;
+}
 .body-parent{
     /* margin: 5px 15px 20px 15px; */
     padding: 15px;
     background-color: antiquewhite;
-    font-family: poppins;  
+    font-family: poppins;
+    min-width: 350px;
 }
 .banner {    
-
     position: relative;
     border-radius: 15px;
     width: 100%;
     max-height:900px;
+    display: flex;
+    justify-content: center;
     position:relative;
     
 }
 .banner img{    
-
     position: relative;
     border-radius: 15px;
     width: 100%;
+    max-width: 1900px;
     max-height:900px;
     position:relative;
 }
@@ -69,7 +79,7 @@ a:hover{
     top: 50%;
     left: 15%;
     transform: translate(-50%, -50%);
-    color: blue;
+    color: blue;  
     font-weight: bolder;
     font-size: 30px;
     
@@ -112,7 +122,7 @@ a:hover{
 /* Body Service */
 .Flex-Services{
     background-color: DodgerBlue;
-    
+    min-width: 324px;
 }
 
 .cards{
@@ -120,6 +130,7 @@ a:hover{
     justify-content: space-evenly;
     align-items: start;
     flex-wrap: wrap;
+    
 }
 
 .cards > div{    
@@ -129,11 +140,15 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
     }
 .cards > #card-item1,#card-item2{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    min-width: 250px;
     max-width: 250px;
+    min-height: 300px;
+    max-height: 300px;
 }
 .Flex-Services > h2{
     margin: 10px;
@@ -151,6 +166,7 @@ a:hover{
     margin-top: 5px;
     display: flex;
     flex-direction: column;
+    
 }
 .judul-items, .text-body-items{
     display: flex;
@@ -166,6 +182,7 @@ a:hover{
     flex-direction: column;
     background-color: beige;
     font-size: medium;
+    line-height: 1.9;
 }
 
 /* Body AboutUs */
@@ -205,11 +222,21 @@ a:hover{
        
         
     }    
+    .company-overview{
+        
+    }
 
 /* Footer */
 
 
 /* Logistics */
+.logistics{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
 .logistics ul{
     column-count: 2;
     list-style-type: none;
@@ -217,6 +244,7 @@ a:hover{
   }
 .logistics li{
     padding: 50px;
+    letter-spacing: 2px;
 }
 
 .logistics img{
