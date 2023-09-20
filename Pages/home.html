@@ -10,20 +10,19 @@
     <title>Home</title>
 </head>
 <body>
-    <nav>
-        <div class="heading">
-            <img src="../Pages/foto/logo.png" alt="Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-        </ul>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-      
-    </nav>
+  <div class="nav">
+    <div class="heading">
+        <img src="../Pages/foto/logo.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+    </ul>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>        
+</div>
     
     <div class="body-parent">
         <div class="banner">
@@ -32,7 +31,6 @@
                 <p>Services</p>
                 <h2>Perusahaan Shipping</h2>
             </div>
-             
         </div>
 
         <div class="accordion-container">
@@ -42,7 +40,7 @@
                 <div class="form-container">
                   <form>
                       <div class="tracking">
-                      <h2 class="track-title">Track Your Package</h2>
+                      <!--<h2 class="track-title">Track Your Package</h2>-->
                       <div class="form-tracking">
                           <form>
                               <input type="text" id="resi" nama="resi">
@@ -86,22 +84,13 @@
               </div>
             </div>
           </div>
-          <script src="accordion.js"></script>  
+      
     </div>
-
+    
     <footer>
         <div class="footer-teks"></div>
     </footer>
-    <script>
-        
-        function myFunction() {
-          var x = document.querySelector(".nav-links");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
+    <script src="script.js"></script>
 </body>
+
 </html>

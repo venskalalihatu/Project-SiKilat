@@ -1,33 +1,55 @@
 
-@media (max-width: 600px){
-    nav{
+@media (max-width: 570px){
+    *{
+        font-family: poppins;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav{
         overflow: hidden;
         background: rgb(172,134,64);
         background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
         position: relative;
         min-width: 350px;
-    
+        font-size:large;
+        width: 100%;
     }
-    nav .nav-links{
+    .nav .nav-links{
         display: none;
+        text-decoration: none;
     }    
-    nav a{
+    .nav a{
         display: block;
     }
-    nav a.icon{
+    .nav a.icon{
+        color: black;
+        position: absolute;
         display: block;
-        right: 0;
-        top: 0;
+        right: 20px;
+        top: 45px;
+        font-size:x-large;
     }
-
+    .nav-links{
+        margin: 0;
+        padding: 0;
+    }
     .nav-links li{
         display: block;        
         font-family: poppins;
         font-weight: bold;
+        
     }
-    
-    nav a:hover{
+    li a{
+        text-decoration: none;
+        color: black;        
+        text-align: center;
+        margin: 10px;
+    }
+    .nav a:hover{
         color: black;
+        background: white;
+        text-decoration: none;
     }
     /* a{
         text-decoration: none;
@@ -47,29 +69,260 @@
         position: absolute;
         top: 50%;
         left: 15%;
-        transform: translate(-10%, -50%);
         color: blue;
         font-weight: bolder;
-        font-size: 23px;
+        font-size: 20px;
         
     }
-}
-@media (min-width: 600px){
-    nav a.icon{
-        display: none;
+
+
+    /* body Home */
+    body{
+        min-width: 350px;
+    }
+    .body-parent{
+        /* margin: 5px 15px 20px 15px; */
+        padding: 15px;
+        background-color: antiquewhite;
+        font-family: poppins;
+        min-width: 350px;
+    }
+    .banner {    
+        position: relative;
+        border-radius: 15px;
+        width: 100%;
+        max-height:900px;
+        display: flex;
+        justify-content: center;
         
     }
-}
-/* @media only screen and (max-width: 1500px){ 
+    .banner img{    
+        position: relative;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 1900px;
+        max-height:900px;
+    }
     .banner-teks{
         padding: 5px 5px 5px 20px;
         position: absolute;
         top: 50%;
         left: 15%;
-        transform: translate(-45%, -50%);
-        color: blue;
+        transform: translate(-50%, -50%);
+        color: blue;  
         font-weight: bolder;
         font-size: 30px;
         
     }
-} */
+    
+    .tracking{
+        padding: 5px 5px 5px 20px;
+        background-color: beige;
+    }
+    
+    .form-tracking{
+        text-align: center;
+    }
+    .form-tracking input{
+        border: 1px  ;
+        border-radius: 42px;
+        width: 1200px;
+        height:40px
+    
+    }
+    .button-track{
+        background: rgb(172,134,64);
+        background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
+        border-radius: 8px;
+        font-family: poppins;
+        border: none;
+        color: black;
+        padding: 16px;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 32px;    
+      }
+      .button-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+     
+    
+    /* Body Service */
+    .Flex-Services{
+        background-color: DodgerBlue;
+        min-width: 324px;    
+    }
+    
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .cards > div{    
+        background-color: #f1f1f1;    
+        margin: 10px;
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        }
+    .cards > #card-item1,#card-item2{
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        margin-top: 10px;
+        min-width: 250px;
+        max-width: 250px;
+        max-height: 300px;
+    }
+    .Flex-Services > h2{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .foto img{
+        width: 100%;
+        max-height: 100px;
+        padding-top: 10px;
+        display: flex;
+    }
+    
+    .text-items{
+        /* background-color: goldenrod; */
+        padding: 10px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .judul-items, .text-body-items{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+    .judul-items{
+        display: flex;
+        background-color: blueviolet;
+    }
+    .text-body-items{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: beige;
+        font-size: medium;
+        line-height: 1.9;
+    }
+    
+    /* Body AboutUs */
+    .Flex-AboutUs{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: DodgerBlue;
+    }
+    .Flex-AboutUs > div{
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        }
+        .items{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            flex-wrap: wrap;
+        }
+        
+        .items > div{    
+            background-color: #f1f1f1;
+            width: 200px;
+            margin: 10px;
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            }
+        
+        #item1,#item2,#item3,#item4,#item5,#item6,#item7{
+            display: flex;
+            flex-direction: column;
+           
+            
+        }    
+        .company-overview{
+            
+        }
+    
+    /* Footer */
+    
+    
+    /* Logistics */
+    .logistics{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px;
+    }
+    .logistics ul{
+        column-count: 2;
+        list-style-type: none;
+    
+      }
+    .logistics li{
+        padding: 50px;
+        letter-spacing: 2px;
+    }
+    
+    .logistics img{
+        width: 60px;
+        height:50px;
+    }
+    
+    /* Body About Us */
+    
+    .Flex-aboutUs{
+        background-color: aquamarine;
+    }
+    .Flex-aboutUs > h2{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .company-body-text{
+        padding: 0 5px 0 5px;
+        background-color: cadetblue;
+    }
+    .company-overview{
+        display: flex;
+        flex-direction: row;
+    }
+    .foto-company{
+        background-color: burlywood;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .foto-profile{
+    
+    }
+    
+}
+@media (min-width: 570px){
+    .nav a.icon{
+        display: none;        
+    }
+    .nav-links li{
+        display: inline;
+    }
+}
