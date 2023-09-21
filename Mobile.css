@@ -11,7 +11,7 @@
         background: rgb(172,134,64);
         background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
         position: relative;
-        min-width: 380px;
+        min-width: 350px;
         font-size:large;
         width: 100%;
     }
@@ -48,7 +48,7 @@
     }
     .nav a:hover{
         color: black;
-        background: F0F0F0;
+        background: white;
         text-decoration: none;
     }
     /* a{
@@ -63,7 +63,19 @@
     .heading img{
         width: 210px;
         height:121px;
-    }   
+    }
+    .banner-teks{
+        /* padding: 5px 5px 5px 20px; */
+        position: absolute;
+        top: 50%;
+        left: 15%;
+
+        color: whitesmoke;
+        font-weight: bolder;
+        font-size: 20px;
+        
+    }
+
 
     /* body Home */
     body{
@@ -95,18 +107,21 @@
     .banner-teks{
         padding: 5px 5px 5px 20px;
         position: absolute;
-        top: 50%;
-        left: 15%;
-        transform: translate(-20%, -50%);
-        color: purple;  
+        top: 35%;    
+        left: 2%;
+        color: white;  
         font-weight: bolder;
         font-size: 20px;
-        
+        filter: drop-shadow(-2px 7px 7px #000000);
+    }
+    
+    .banner-teks p{
+        font-size: 10px;
     }
     
     .tracking{
         padding: 5px 5px 5px 20px;
-        background-color: beige;
+
     }
     
     .form-tracking{
@@ -136,7 +151,47 @@
         justify-content: center;
         align-items: center;
       }
-     
+      .accordion-container {
+        display: flex;
+        max-width: 5000px;
+        margin: 5px auto;
+      }
+    
+      .accordion {
+        flex: 1;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        border-radius: 15px;
+      }
+    
+      .accordion-header {
+        background: rgb(172,134,64);
+        background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
+        padding: 10px;
+        cursor: pointer;
+        opacity:70%;
+        text-align: center;
+       
+      }
+    
+      .accordion-header:hover{
+        background: rgb(172,134,64);
+        background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
+        padding: 10px;
+        cursor: pointer;
+        opacity: 100%;
+        text-align: center;
+       
+      }
+    
+      .accordion-content {
+        display: none;
+        padding: 10px;
+      }
+    
+      .form-container {
+        margin: 10px;
+      }
     
     /* Body Service */
     .Flex-Services{
@@ -247,6 +302,9 @@
            
             
         }    
+        .company-overview{
+            
+        }
     
     /* Footer */
     
@@ -298,6 +356,9 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
+    }
+    .foto-profile{
+    
     }
     
 }

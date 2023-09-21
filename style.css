@@ -10,6 +10,166 @@
         font-size:x-large;
         min-width: 350px;
     
+}
+ 
+.nav-links li{
+    display: inline;
+    margin-right: 20px;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    color:white;
+}
+
+.heading img{
+    width: 210px;
+    height:121px;
+}
+
+*{
+    font-family: poppins;
+    padding: 0;
+    margin: 0;
+}
+
+/* body Home */
+body{
+    min-width: 350px;
+}
+.body-parent{
+    /* margin: 5px 15px 20px 15px; */
+    padding: 15px;
+    background-color: antiquewhite;
+    font-family: poppins;
+    min-width: 350px;
+}
+
+
+.banner{
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    max-height:800px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+
+.banner img{    
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1900px;
+    max-height:750px; 
+    position:relative;
+    object-fit: cover;
+}
+.banner-teks{
+    padding: 5px 5px 5px 20px;
+    position: absolute;
+    top:38%;
+    left: 12%;
+    color: whitesmoke;  
+    font-weight: bolder;
+    font-size: 48px;
+    filter: drop-shadow(-2px 7px 7px #000000);
+    
+}
+.banner-teks p{
+    font-size: 24px;
+}
+
+.tracking{
+    padding: 5px 5px 5px 20px;
+}
+
+.form-tracking{
+    text-align: center;
+}
+.form-tracking input{
+    border: 1px  ;
+    border-radius: 42px;
+    width: 500px;
+    height:40px
+
+}
+.button-track{
+    background: rgb(172,134,64);
+    background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
+    border-radius: 8px;
+    font-family: poppins;
+    border: none;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 32px;    
+  }
+  .button-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .accordion-container {
+    display: flex;
+    max-width: 5000px;
+    margin: 5px auto;
+  }
+
+  .accordion {
+    flex: 1;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .accordion-header {
+    background: rgb(172,134,64);
+    background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
+    padding: 10px;
+    cursor: pointer;
+    opacity:70%;
+    text-align: center;
+   
+  }
+
+  .accordion-header:hover{
+    background: rgb(172,134,64);
+    background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
+    padding: 10px;
+    cursor: pointer;
+    opacity: 100%;
+    text-align: center;
+   
+  }
+
+  .accordion-content {
+    display: none;
+    padding: 10px;
+  }
+
+  .form-container {
+    margin: 10px;
+  }
+/* Body Service */
+.Flex-Services{
+    background-color: DodgerBlue;
+    min-width: 324px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+
     }    
     .nav-links{
         list-style-type: none;
@@ -33,6 +193,7 @@
     a:hover{
         color:white;
     }
+
     
     .heading img{
         width: 210px;
@@ -44,79 +205,6 @@
         padding: 0;
         margin: 0;
     }
-    
-    /* body Home */
-    body{
-        min-width: 350px;
-    }
-    .body-parent{
-        /* margin: 5px 15px 20px 15px; */
-        padding: 15px;
-        background-color: antiquewhite;
-        font-family: poppins;
-        min-width: 350px;
-    }
-    .banner {    
-        position: relative;
-        border-radius: 15px;
-        width: 100%;
-        max-height:900px;
-        display: flex;
-        justify-content: center;
-        
-    }
-    .banner img{    
-        position: relative;
-        border-radius: 15px;
-        width: 100%;
-        max-width: 1900px;
-        max-height:900px;
-    }
-    .banner-teks{
-        padding: 5px 5px 5px 20px;
-        position: absolute;
-        top: 50%;
-        left: 15%;
-        transform: translate(10%, -50%);
-        color: blue;  
-        font-weight: bolder;
-        font-size: 30px;
-        
-    }
-    
-    .tracking{
-        padding: 5px 5px 5px 20px;
-        background-color: beige;
-    }
-    
-    .form-tracking{
-        text-align: center;
-    }
-    .form-tracking input{
-        border: 1px  ;
-        border-radius: 42px;
-        width: 1200px;
-        height:40px
-    
-    }
-    .button-track{
-        background: rgb(172,134,64);
-        background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
-        border-radius: 8px;
-        font-family: poppins;
-        border: none;
-        color: black;
-        padding: 16px;
-        text-align: center;
-        font-size: 12px;
-        margin-top: 32px;    
-      }
-      .button-center{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-     
     
     /* Body Service */
     .Flex-Services{
@@ -227,7 +315,9 @@
            
             
         }    
-   
+        .company-overview{
+            
+        }
     
     /* Footer */
     
@@ -280,5 +370,7 @@
         align-items: center;
         padding: 20px;
     }
-  
+    .foto-profile{
+    
+    }
 }
