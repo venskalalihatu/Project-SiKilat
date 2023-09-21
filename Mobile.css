@@ -11,7 +11,7 @@
         background: rgb(172,134,64);
         background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
         position: relative;
-        min-width: 350px;
+        min-width: 425px;
         font-size:large;
         width: 100%;
     }
@@ -79,7 +79,7 @@
 
     /* body Home */
     body{
-        min-width: 350px;
+        min-width: 425px;
     }
     .body-parent{
         /* margin: 5px 15px 20px 15px; */
