@@ -1,11 +1,13 @@
 
-@media (max-width: 570px){
+@media (width <= 570px){
     *{
         font-family: poppins;
         padding: 0;
         margin: 0;
     }
-    
+    body{
+        min-width: 425px;
+    }
     .nav{
         overflow: hidden;
         background: rgb(172,134,64);
@@ -46,10 +48,11 @@
         text-align: center;
         margin: 10px;
     }
-    .nav a:hover{
+    li a:hover{
         color: black;
         background: white;
         text-decoration: none;
+        border-radius: 20px;
     }
     /* a{
         text-decoration: none;
@@ -64,23 +67,10 @@
         width: 210px;
         height:121px;
     }
-    .banner-teks{
-        /* padding: 5px 5px 5px 20px; */
-        position: absolute;
-        top: 50%;
-        left: 15%;
-
-        color: whitesmoke;
-        font-weight: bolder;
-        font-size: 20px;
-        
-    }
 
 
     /* body Home */
-    body{
-        min-width: 425px;
-    }
+    
     .body-parent{
         /* margin: 5px 15px 20px 15px; */
         padding: 15px;
@@ -111,12 +101,12 @@
         left: 2%;
         color: white;  
         font-weight: bolder;
-        font-size: 20px;
+        font-size: 22px;
         filter: drop-shadow(-2px 7px 7px #000000);
     }
     
     .banner-teks p{
-        font-size: 10px;
+        font-size: 15px;
     }
     
     .tracking{
@@ -363,7 +353,7 @@
     }
     
 }
-@media (min-width: 570px){
+@media (width > 570px){
     .nav a.icon{
         display: none;        
     }

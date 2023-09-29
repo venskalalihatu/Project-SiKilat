@@ -1,5 +1,5 @@
 /* styling bagian navbar */
-@media (min-width: 1024px){
+@media (width > 570px) and (width < 1024px){
     *{
         font-family: poppins;
         padding: 0;
@@ -7,7 +7,7 @@
     }
     body{
         min-width: 350px;
-    }
+    }   
     .nav{
         display: flex;
         justify-content: space-between;
@@ -15,7 +15,7 @@
         padding: 10px 20px;    
         background: rgb(172,134,64);
         background: linear-gradient(180deg, rgba(255, 138, 59, 0.70) 0%, rgba(255, 177, 0, 0.34) 100%);
-        font-size:x-large;
+        font-size:larger;
         min-width: 350px;
     
 }
@@ -41,12 +41,6 @@ a:hover{
     height:121px;
 }
 
-*{
-    font-family: poppins;
-    padding: 0;
-    margin: 0;
-}
-
 /* body Home */
 
 .body-parent{
@@ -56,6 +50,7 @@ a:hover{
     font-family: poppins;
     min-width: 350px;
 }
+
 
 .banner{
     position: relative;
@@ -75,22 +70,20 @@ a:hover{
     max-height:750px; 
     position:relative;
     object-fit: cover;
-    opacity: .8;
 }
-
 .banner-teks{
     padding: 5px 5px 5px 20px;
     position: absolute;
     top:38%;
     left: 12%;
-    color: whitesmoke;
+    color: whitesmoke;  
     font-weight: bolder;
-    font-size: 48px;
+    font-size: 30px;
     filter: drop-shadow(-2px 7px 7px #000000);
     
 }
 .banner-teks p{
-    font-size: 33px;
+    font-size: 24px;
 }
 
 .tracking{
@@ -165,7 +158,6 @@ a:hover{
   .form-container {
     margin: 10px;
   }
-
 /* Body Service */
 .Flex-Services{
     background-color: DodgerBlue;
@@ -281,6 +273,28 @@ a:hover{
         line-height: 2;
         min-height: 200px;
     }
+    /* Logistics Service*/
+    .logistics{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px;
+    }
+    .logistics ul{
+        column-count: 2;
+        list-style-type: none;
+    
+      }
+    .logistics li{
+        padding: 50px;
+        letter-spacing: 2px;
+    }
+    
+    .logistics img{
+        width: 60px;
+        height:50px;
+    }
     
     /* Body AboutUs */
     .Flex-AboutUs{
@@ -318,36 +332,7 @@ a:hover{
             flex-direction: column;
            
             
-        }    
-        .company-overview{
-            
-        }
-    
-    /* Footer */
-    
-    
-    /* Logistics */
-    .logistics{
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 5px;
-    }
-    .logistics ul{
-        column-count: 2;
-        list-style-type: none;
-    
-      }
-    .logistics li{
-        padding: 50px;
-        letter-spacing: 2px;
-    }
-    
-    .logistics img{
-        width: 60px;
-        height:50px;
-    }
+        }      
     
     /* Body About Us */
     
