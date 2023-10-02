@@ -16,11 +16,11 @@ accordions.forEach((accordion) => {
   });
 });
 
-function myFunction() {
+const navBar = () => {
   var navBar = document.querySelector(".nav-links");
   if (navBar.style.display === "block") {
     navBar.style.display = "none";
   } else {
     navBar.style.display = "block";
   }
-}
+};

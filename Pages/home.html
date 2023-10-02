@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../tablet.css">
-    <link rel="stylesheet" href="../Mobile.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/Mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     
     <title>Home</title>
 </head>
 <body>
-  <div class="nav">
-    <div class="heading">
-        <img src="../Pages/foto/logo.png" alt="Logo">
+    <div class="nav">
+        <div class="heading">
+            <img src="../Pages/foto/logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="navBar()">
+            <i class="fa fa-bars"></i>
+          </a>        
     </div>
-    <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-    </ul>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>        
-</div>
     
     <div class="body-parent">
         <div class="banner">
@@ -45,8 +45,8 @@
                       <!--<h2 class="track-title">Track Your Package</h2>-->
                       <div class="form-tracking">
                           <form>
-                              <input type="text" id="resi" nama="resi">
-                          
+                              <input type="text" id="resi" nama="resi" placeholder="Check Your Resi">
+                          </form>
                           </div>
                           <div class="button-center">
                               <button class="button-track">Track</button>
@@ -66,33 +66,43 @@
                     <div class="form-tracking">
                           <form>
           
-                      <label for="fname"><i class="fa fa-user"></i> Full Name</label> <br>
-                      <input type="text" id="fullname" name="fullname" > <br>
-                      <label for="email"><i class="fa fa-envelope"></i> Email</label> <br>
-                      <input type="text" id="email" name="email" > <br>
-                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label> <br>
-                      <input type="text" id="address" name="address" > <br>
-                      <label for="city"><i class="fa fa-institution"></i> Kota Asal</label> <br>
-                      <input type="text" id="cityfrom" name="city" > <br>
-                      <label for="city"><i class="fa fa-institution"></i> Kota Tujuan</label> <br>
-                      <input type="text" id="cityto" name="city" > <br>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label> <br>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter Your Fullname"> <br>
+
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label> <br>
+                            <input type="text" id="email" name="email" placeholder="Enter Your Email"> <br>
+
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label> <br>
+                            <input type="text" id="address" name="address" placeholder="Enter Your Address"> <br>
+
+                            <label for="city"><i class="fa fa-institution"></i> Kota Asal</label> <br>
+                            <input type="text" id="cityfrom" name="city" placeholder="Enter Your City From"> <br>
+
+                            <label for="city"><i class="fa fa-institution"></i> Kota Tujuan</label> <br>
+                            <input type="text" id="cityto" name="city" placeholder="Enter Your City To"> <br>
+
+                            <label for="weight"><i class="fa fa-institution"></i> Item Weight</label> <br>
+                            <input type="text" id="" name="weight" placeholder="Enter Your Item Weight">
+                          
+                          </form>
           
-                          </div>
-                          <div class="button-center">
-                              <button class="button-track">Send</button>
-                          </div>
+                    </div>
+                        <div class="button-center">
+                            <button class="button-track">Send</button>
+                        </div>
                   </form>
                 </div>
               </div>
             </div>
-          </div>
-      
+          </div>          
+        
+        <div class="result-package">No resi</div>
     </div>
     
     <footer>
         <div class="footer-teks"></div>
     </footer>
-    <script src="script.js"></script>
+    <script src="../Js/logicDisplay.js"></script>
 </body>
 
 </html>

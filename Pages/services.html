@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../tablet.css">
-    <link rel="stylesheet" href="../Mobile.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/tablet.css">
+    <link rel="stylesheet" href="../css/Mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <title>Services</title>
@@ -20,7 +20,7 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="aboutUs.html">About Us</a></li>
         </ul>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="navBar()">
             <i class="fa fa-bars"></i>
           </a>        
     </div>
@@ -42,7 +42,7 @@
             </ul>
         </div>
         <div class="Flex-Services">
-            <h2>Service</h2>
+            <h2>Our Service</h2>
             <div class="cards">
                 <div id="card-item1">
                     <div class="foto">
@@ -65,12 +65,12 @@
                     </div>
                     <div class="text-items">
                         <div class="judul-items">
-                            <h6>Kilat | Tomorrow</h6>
+                            <h6>Kilat</h6>
                         </div>
                         <div class="text-body-items">
                             <p>Besok Sampai</p>
                             <p>Estimasi 1 hari atau 9 - 24 jam.</p>
-                            <p>Hanya mencangkup daerah tertentu (Jabodetabek)</p>
+                            <p>Jabodetabek</p>
                         </div>
                     </div>
                 </div>                
@@ -83,15 +83,6 @@
         <div class="footer-teks"></div>
     </footer>
 
-    <script>
-        function myFunction() {
-          var x = document.querySelector(".nav-links");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
+    <script src="../Js/logicDisplay.js"></script>
 </body>
 </html>
