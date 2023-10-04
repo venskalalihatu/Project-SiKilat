@@ -118,7 +118,8 @@
   .form-tracking {
     text-align: center;
   }
-  .form-tracking input {
+  .form-tracking input,
+  select {
     border: 1px;
     border-radius: 14px;
     width: 150px;
