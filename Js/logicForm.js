@@ -1,3 +1,4 @@
+//Validation Form
 document.querySelector("#btnSend").onclick = Validation = (event) => {
   event.preventDefault();
 
@@ -104,6 +105,19 @@ document.querySelector("#btnSend").onclick = Validation = (event) => {
   document.querySelector("#weight").value = "";
 };
 
+//Check Resi
+document.querySelector(".button-track").onclick = checkResi = (event) => {
+  event.preventDefault();
+
+  const resiTrack = document.querySelector("#resi").value;
+
+  if (!resiTrack) {
+    alert("Please fill in all fields correctly before sending.");
+    return;
+  }
+};
+
+//Logic Price Per Kilogram
 function calculateTotalPrice(packageService, weight) {
   // Define prices for Regular and Kilat packages
   const regularPricePerKg = 10000;
